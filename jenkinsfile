@@ -20,7 +20,7 @@ pipeline {
                 path: '', 
                 url: 'http://15.206.145.232:8080/')], 
                 contextPath: 'Project-02', 
-                war: '**/target/*.war'
+                war: '**/*.war'
             }
         }
     }
