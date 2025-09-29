@@ -28,7 +28,7 @@ pipeline {
         success {
             emailext to: "ksandeepsrinivas17@gmail.com",
             recipientProviders: [developers()],
-            subject: "Jenkins Pipe : ${currentBuild.currentResult}: ${env.JOB_NAME}",
+            subject: "jenkins Pipe : ${currentBuild.currentResult}: ${env.JOB_NAME}",
             body: "${currentBuild.currentResult}: Job ${env.JOB_NAME}\n More Info can be found here: ${env.BUILD_URL}",
 
             attachLog: true
