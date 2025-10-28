@@ -18,7 +18,7 @@ pipeline {
             steps {
                 deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'Tomcat-credentials',
                 path: '', 
-                url: 'http://65.2.170.157:8080/')], 
+                url: 'http://13.203.203.38:8080/')], 
                 contextPath: 'Project-02', 
                 war: '**/*.war'
             }
